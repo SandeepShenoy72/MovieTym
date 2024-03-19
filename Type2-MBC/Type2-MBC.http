@@ -1,0 +1,6 @@
+@Type2_MBC_HostAddress = http://localhost:5139
+
+GET {{Type2_MBC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
