@@ -67,6 +67,8 @@ namespace Type2_MBC.Controllers
         [HttpGet]
         [Route("ShowAvailableSeats")]
 
+        //Shows Available Seats
+
         public IActionResult ShowAvailableSeats(int? theatre_id)
         {
             var res = dbContext.Seats.Where(x => x.TheatreId == theatre_id && x.IsBooked==false).ToList();
